@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# testing
+coverage/
+
+# production build
+build/
+
+# misc
+.DS_Store
+.env
+.env.*.local
+*.log
+
+# lock files (optional — if you don’t use yarn)
+yarn.lock
