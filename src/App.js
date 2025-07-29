@@ -32,7 +32,7 @@ function Login() {
   };
 
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial" }}>
+    <div className="container">
       <h1>SmartBooks Login</h1>
       <form onSubmit={handleSubmit}>
         <input name="username" placeholder="Username" onChange={handleChange} required />
@@ -73,7 +73,7 @@ function Dashboard() {
 
   useEffect(() => {
     fetchTransactions();
-  }, []);
+  }, [filters]);
 
   const handleFormChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -161,7 +161,7 @@ function Dashboard() {
   };
 
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial" }}>
+    <div className="container">
       <h1>SmartBooks Dashboard</h1>
 
       <h2>Filter</h2>
