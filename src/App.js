@@ -243,8 +243,9 @@ function Dashboard() {
               <td>{txn.amount}</td>
               <td>{txn.purpose}</td>
               <td>
-                <button onClick={() => handleEdit(txn)}>Edit</button>
-                <button onClick={() => handleDelete(txn.id)}>Delete</button>
+                <button className="edit-btn" onClick={() => handleEdit(txn)}>Edit</button>
+<button className="delete-btn" onClick={() => handleDelete(txn.id)}>Delete</button>
+
               </td>
             </tr>
           ))}
